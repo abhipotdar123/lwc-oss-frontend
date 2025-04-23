@@ -1,5 +1,5 @@
 import { LightningElement } from 'lwc';
-const SERVER_URL = "http://localhost:3002"
+const BACKEND_URL = "https://expense-manager-backend-45o6.onrender.com"||"http://localhost:3002"
 
 export default class Login extends LightningElement {
     handleLoginClick() {
@@ -8,6 +8,6 @@ export default class Login extends LightningElement {
     }
 
     get loginUrl(){
-        return `${SERVER_URL}/oauth2/login`
+        return `${BACKEND_URL}/oauth2/login`
     }
 }
