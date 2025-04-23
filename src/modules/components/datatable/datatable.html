@@ -1,0 +1,39 @@
+<template>
+    <div class="table-container">
+        <div class="search-controls">
+            <lightning-input
+                type="search"
+                label="Search"
+                value={searchTerm}
+                onchange={handleSearchChange}>
+            </lightning-input>
+        </div>
+
+        <lightning-datatable class="custom-datatable"
+            key-field={keyField}
+            data={displayedRecords}
+            columns={columns}
+            hide-checkbox-column
+            show-row-number-column
+            min-column-width="200"
+            onrowaction={handleRowAction}
+            sorted-by={sortedBy}
+            sorted-direction={sortedDirection}
+            onsort={handleSort}>
+        </lightning-datatable>
+
+        <div class="pagination-container">
+            <lightning-button
+                label="Previous"
+                disabled={isFirstPage}
+                onclick={handlePreviousPage}>
+            </lightning-button>
+            <span class="page-info">Page {currentPage} of {totalPages}</span>
+            <lightning-button
+                label="Next"
+                disabled={isLastPage}
+                onclick={handleNextPage}>
+            </lightning-button>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,33 @@
+nav {
+    background: #3498db;
+    color: white;
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.username {
+    max-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Hover effect and tooltip styling */
+.logout-icon {
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+
+/* Change color on hover */
+.logout-icon:hover {
+    fill: #e74c3c; /* Red color on hover */
+}

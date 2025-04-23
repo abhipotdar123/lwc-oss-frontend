@@ -1,0 +1,56 @@
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    min-height: 100vh;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.login-wrapper h1 {
+    font-size: 72px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.login-wrapper h2 {
+    font-size: 60px;
+    color: #34495e;
+}
+
+.login-wrapper p {
+    font-size: 24px;
+    color: #555;
+    margin: 16px 0;
+}
+
+.login-wrapper a {
+    border-radius: 5px;
+    padding: 8px 50px;
+    margin-top: 20px;
+    background: #3498db;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.login-wrapper a:hover {
+    background-color: #2980b9;
+}
+
+.login-wrapper img {
+    max-width: 100%;
+    max-height: 600px;
+    height: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}

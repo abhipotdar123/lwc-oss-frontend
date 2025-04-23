@@ -1,0 +1,70 @@
+:host {
+    display: block;
+    padding: 16px;
+    background-color: #e9f1fa;
+    border-radius: 12px;
+}
+
+.table-container {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    padding: 16px;
+}
+
+/* Responsive search bar */
+.search-controls {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 12px;
+}
+
+.search-controls lightning-input {
+    max-width: 300px;
+    width: 100%;
+}
+
+/* Make datatable full width but scrollable on smaller screens */
+.custom-datatable {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Pagination adjustments */
+.pagination-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    gap: 8px;
+    background: #ffffff;
+    border-top: 1px solid #e0e7f7;
+}
+
+.page-info {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+    .search-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pagination-container {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .page-info {
+        font-size: 13px;
+    }
+
+    lightning-input {
+        width: 100% !important;
+    }
+}
